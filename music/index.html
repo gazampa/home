@@ -1,0 +1,89 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<TITLE>Music</TITLE>
+</HEAD>
+<BODY BGCOLOR="#000000" TEXT="#ffffff" LINK="#00ff00" ALINK="#00ff00">
+<Script Language="JavaScript">
+<!--
+/*	Script by Lefteris Haritou
+	Copyright © 1998 -1999
+	http://www.geocities.com/~lef
+	This Script is free as long
+	as you keep the above credit !
+*/
+if (document.all)
+document.write('<Script Language="JavaScript" Src="amphtml.js"></Script><Script Language="JavaScript" Src="amp.js"></Script>')
+else
+var start="";
+//-->
+</Script>
+<Script>
+<!--
+if (document.all){
+audiodiv.style.posTop=10;    //Display Vertical Position is set here (distance from top in pixels)
+audiodiv.style.posLeft=10;   //Display Horizontal Position is set here (distance from left in pixels)
+
+autostart=true //This defines wether the player should automatically load first track and play it or wait for user to select a track
+
+//Add below your song entries
+
+
+songurl[0]="srv2.mid"
+songtitle[0]="SRV"
+songurl[1]="mus1.mid"
+songtitle[1]="Rage Against the Machine"
+songurl[2]="mus2.mid"
+songtitle[2]="Everclear"
+songurl[3]="mus3.mid"
+songtitle[3]="Talking Heads"
+songurl[4]="blugrass.mid"
+songtitle[4]="Yeeeehaaw"
+songurl[5]="lplayboy.mid"
+songtitle[5]="Everybody Dance Now"
+
+// Song entries should be placed above here
+
+}
+
+//-->
+</Script>
+<Script for="jsaudio" event="OpenComplete()" Language="JavaScript">
+<!--
+if (document.all){
+if (start)
+loaded()
+}
+//-->
+</Script>
+<Script for="jsaudio" event="Error(a,b,c,d)" Language="JavaScript">
+<!--
+if (start)
+if (document.all){
+err=b+"";
+if(err.match('Cannot open'))
+f404()
+}
+//-->
+</Script>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+Choose a track, Pour a drink and then Minimise this window....
+<BR>
+( To Choose...Select PL from the Midi Player )
+
+<OL TYPE=i>
+  <LI>Stevie Ray Vaughan
+  <LI>Rage against the Machine
+  <LI>Everclear
+  <LI>Talking Heads
+  <LI>Some Bluegrass...
+  <LI>Some Salsa...
+</OL>
+</BODY>
+</HTML>

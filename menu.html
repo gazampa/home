@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<HTML>
+<HEAD>
+<!--Script for Animated buttons-->
+<SCRIPT language="JavaScript">
+<!--
+version="0";
+browserName = navigator.appName;
+browserVer = parseInt(navigator.appVersion);
+if (browserName == "Netscape" && browserVer >= 3)
+   version="n3";
+if (browserName == "Microsoft Internet Explorer" && browserVer >= 3)
+   version="n3";
+if (version == "n3")
+{
+   livingon = new Image(101,11);
+   livingon.src = "buttons/livingon.gif";
+   livingoff = new Image(101,11);
+   livingoff.src = "buttons/livingoff.gif";
+   darkon = new Image(101,11);
+   darkon.src = "buttons/darkon.gif";
+   darkoff = new Image(101,11);
+   darkoff.src = "buttons/darkoff.gif";
+   gameson = new Image(101,11);
+   gameson.src = "buttons/gameson.gif";
+   gamesoff = new Image(101,11);
+   gamesoff.src = "buttons/gamesoff.gif";
+   musicon = new Image(101,11);
+   musicon.src = "buttons/musicon.gif";
+   musicoff = new Image(101,11);
+   musicoff.src = "buttons/musicoff.gif";
+   neighbourson = new Image(101,11);
+   neighbourson.src = "buttons/neighon.gif";
+   neighboursoff = new Image(101,11);
+   neighboursoff.src = "buttons/neighoff.gif";
+   utson = new Image(101,11);
+   utson.src = "buttons/utson.gif";
+   utsoff = new Image(101,11);
+   utsoff.src = "buttons/utsoff.gif";
+}
+
+function img_On(imgName)
+{
+  if (version == "n3")
+  {
+    imgOn = eval(imgName + "on.src");
+    document [imgName].src = imgOn;
+  }
+}
+
+function img_Off(imgName)
+{
+  if (version == "n3")
+  {
+    imgOff = eval(imgName + "off.src");
+    document [imgName].src = imgOff;
+  }
+}
+
+function openNewBrowser(url){
+	open(url);
+}
+
+// -->
+</SCRIPT>
+</HEAD>
+
+<BODY bgcolor="#000000">
+<TABLE width="100%">
+ <TR>
+  <TD width="16%"><A href="living/index.html" target="main_frame"
+   ONMOUSEOVER="img_On('living')"
+   ONMOUSEOUT="img_Off('living')">
+   <IMG src="buttons/livingoff.gif" name="living"
+     width="101" height="11" border="0" alt="News"></A>
+  </TD>
+
+  <TD width="16%"><A href="dark/index.html" target="main_frame"
+   ONMOUSEOVER="img_On('dark')"
+   ONMOUSEOUT="img_Off('dark')">
+   <IMG src="buttons/darkoff.gif" name="dark"
+     width="101" height="11" border="0" alt="Some Photoes"></A>
+  </TD>
+
+  <TD width="17%"><A href="#" onClick="javascript:openNewBrowser('http://www.mindspring.com/~bmurphy77/music/index.html');return false;"
+   ONMOUSEOVER="img_On('music')"
+   ONMOUSEOUT="img_Off('music')">
+   <IMG src="buttons/musicoff.gif" name="music"
+     width="101" height="11" border="0" alt="Midi Player"></A>
+  </TD>
+
+  <TD width="17%"><A href="games/astroids/asteroids.html" target="main_frame"
+   ONMOUSEOVER="img_On('games')"
+   ONMOUSEOUT="img_Off('games')">
+   <IMG src="buttons/gamesoff.gif" name="games"
+     width="101" height="11" border="0" alt="Entertainment"></A>
+  </TD>
+
+  <TD width="17%"><A href="neighbours/index.html" target="main_frame"
+   ONMOUSEOVER="img_On('neighbours')"
+   ONMOUSEOUT="img_Off('neighbours')">
+   <IMG src="buttons/neighoff.gif" name="neighbours"
+     width="101" height="11" border="0" alt="Links Page"></A>
+  </TD>
+
+  <TD width="17%"><A href="uts/portal.html" target="main"
+   ONMOUSEOVER="img_On('uts')"
+   ONMOUSEOUT="img_Off('uts')">
+   <IMG src="buttons/utsoff.gif" name="uts"
+     width="101" height="11" border="0" alt="Whats in here?"></A>
+  </TD>
+ </TR>
+</TABLE>
+
+
+</BODY>
+</HTML>

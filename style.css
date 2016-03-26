@@ -1,0 +1,28 @@
+body{
+	background-color:#000000;
+	scrolling:no;
+}
+
+.main {
+	height: 600px;
+	background-color:#000000;
+	scrolling:no;
+}
+
+.menu {
+	height:50px;
+	background-color:#000000;
+	scrolling:no;
+}
+
+.main_table{
+	width:100%;
+}
+.main_table_td_angel{
+	width:20%;
+}
+
+.main_table_door{
+	width="60%";
+	align=center;
+}
